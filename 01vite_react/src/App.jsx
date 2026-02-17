@@ -1,4 +1,4 @@
-
+import Chai from "./chai.jsx"
 
 function App() {
   
@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <h1>React with vite</h1>
+      <Chai/>
     </>
   )
 }

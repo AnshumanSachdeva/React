@@ -14,7 +14,15 @@ function App() {
     if (counter >= 20) {
       setCounter((counter = 20));
     } else {
-      setCounter((counter += 1));
+      // setCounter((counter += 1));
+      // setCounter((counter += 1));
+      // setCounter((counter += 1));
+      // setCounter((counter += 1));
+      // Agar counter ko bar bar +=1kar rhe hai jaise upar kiya toh vo ek hi bar hoga. Jaise is case mein counter ki value suppose 8 hai aur mai +1 kiya 4 bar toh vo ek hi bar hoga .ie. value 12 ki jagah 9 hogi. Yeh useState ki vjh se hota hai, actually vo kya krta hai ki yeh charo statement ek hi batch mein jati hai aur vo dekhta hai ki sab ek hi kaam krne ki bat kr rhe hai isliye vo ek var hi krta hai.
+
+      setCounter((prevCounter)=> prevCounter+1) // setCounter k andar ek callback milta hai jo vo value return krke deta hai jo update hone se pahle thi and hum usko use karke update kr rhe hai.
+      setCounter((prevCounter)=> prevCounter+1)
+      setCounter((prevCounter)=> prevCounter+1) // ab chalega aaram se
     }
   };
 
